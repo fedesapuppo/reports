@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_of_incident: 2023-01-26
+  time_of_incident: 2023-01-26 15:01:49
+  type_of_incident: MyString
+  location_of_incident: MyString
+  initiator_of_incident: MyString
+  unit_identity: MyString
+  details_of_incident: MyString
+  action_taken: MyString
+  incident_status: MyString
+  further_information: MyString
+  signed_by: MyString
+
+two:
+  date_of_incident: 2023-01-26
+  time_of_incident: 2023-01-26 15:01:49
+  type_of_incident: MyString
+  location_of_incident: MyString
+  initiator_of_incident: MyString
+  unit_identity: MyString
+  details_of_incident: MyString
+  action_taken: MyString
+  incident_status: MyString
+  further_information: MyString
+  signed_by: MyString

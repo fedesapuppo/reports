@@ -11,18 +11,21 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema[7.0].define(version: 2023_01_26_180148) do
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "reports", force: :cascade do |t|
     t.date "date_of_incident"
     t.time "time_of_incident"
-    t.string "type_of_incident"
-    t.string "location_of_incident"
-    t.string "initiator_of_incident"
-    t.string "unit_identity"
-    t.string "details_of_incident"
-    t.string "action_taken"
-    t.string "incident_status"
-    t.string "further_information"
-    t.string "signed_by"
+    t.text "type_of_incident"
+    t.text "location_of_incident"
+    t.text "initiator_of_incident"
+    t.text "unit_identity"
+    t.text "details_of_incident"
+    t.text "action_taken"
+    t.text "incident_status"
+    t.text "further_information"
+    t.text "signed_by"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

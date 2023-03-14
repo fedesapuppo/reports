@@ -52,3 +52,13 @@ test:
   username: fsapuppo
   password:
   timeout: 5000
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: reports_production
+  pool: 5
+  username: reports
+  password:
+  timeout: 5000
+  url: <%= ENV['DATABASE_URL'] %>

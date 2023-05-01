@@ -1,13 +1,12 @@
 <div class="jumbotron">
   <h1 class="display-3">Report: <%= @report.date_of_incident %> | <%= @report.time_of_incident.strftime("%k:%M") %></h1>
-
   <p class="lead"><%= render @report %></p>
-  
   <hr class="my-2">
-  
   <p class="lead">
     <%= link_to "Back to reports", reports_path, class:"btn btn-dark" %>
-    <%= link_to "Edit this report", edit_report_path(@report), class:"btn btn-warning" %> |
-    <%= button_to "Destroy this report", @report, method: :delete, class:"btn btn-danger" %>
+    <% if @report.user == current_user %>
+      <%= link_to "Edit this report", edit_report_path(@report), class:"btn btn-warning" %> |
+      <%= button_to "Destroy this report", @report, method: :delete, class:"btn btn-danger" %>
+    <% end %>
   </p>
 </div>

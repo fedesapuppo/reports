@@ -53,6 +53,12 @@
     <%= form.label :signed_by, style: "display: block", class:"form-label" %>
     <%= form.text_field :signed_by, class:"form-control" %>
   </div>
+  <div class="field form-group">
+    <% form.label :signed_by, style: "display: block", class:"form-label" %>
+    <%= form.number_field :user_id, id: :report_user_id, class:"form-control", 
+    value:current_user.id, type: :hidden %>
+  </div>
+  <br>
   <div>
     <%= form.submit class:'btn btn-success' %>
   </div>

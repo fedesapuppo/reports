@@ -65,6 +65,6 @@ class ReportsController < ApplicationController
   # Only allow a list of trusted parameters through.
   def report_params
     params.require(:report).permit(:date_of_incident, :time_of_incident, :type_of_incident, :location_of_incident,
-                                   :initiator_of_incident, :unit_identity, :details_of_incident, :action_taken, :incident_status, :further_information, :signed_by)
+                                   :initiator_of_incident, :unit_identity, :details_of_incident, :action_taken, :incident_status, :further_information, :signed_by, :user_id)
   end
 end

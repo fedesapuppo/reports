@@ -1,6 +1,6 @@
 # README
 
-This app was deploy to RENDER
+This app was deployed to RENDER
 
 In order to execute this app, go to:
 
